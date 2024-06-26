@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Set the headers from endpoint
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             // "Authorization: Bearer FLWSECK_TEST-7a25324ccb2575d8ce5fdecf4ca14949-X",
-            "Authorization: Bearer FLWSECK-2dee70d2e125f9e36fda8b82ba091118-18fd817256avt-X",
+            "Authorization: Bearer FLWSECK-XXXXXXXXXXXXXX-XXXXXXXX-X",
             "Content-Type: Application/json",
             "Cache-Control: no-cahe"
         ));
@@ -134,6 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET"){
             header('Location: index.php');
             echo "Payment was not successful.";
         }
+        
     } else {
         header('Location: index.php');
             echo "Payment was not successful.";
